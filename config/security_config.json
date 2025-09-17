@@ -1,0 +1,32 @@
+{
+  "security": {
+    "default_restricted_mode": true,
+    "require_confirmation_for_admin": true,
+    "dangerous_commands": [
+      "format",
+      "del /f /s",
+      "rm -rf /",
+      "shutdown -f",
+      "reboot",
+      "diskpart",
+      "bcdedit",
+      "reg delete"
+    ],
+    "allowed_admin_operations": [
+      "system_info",
+      "process_management", 
+      "service_control",
+      "file_operations"
+    ]
+  },
+  "authentication": {
+    "require_password": false,
+    "session_timeout": 3600,
+    "max_failed_attempts": 3
+  },
+  "logging": {
+    "log_all_commands": true,
+    "log_system_access": true,
+    "sensitive_data_masking": true
+  }
+}

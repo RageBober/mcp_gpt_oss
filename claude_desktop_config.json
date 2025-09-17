@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "autonomous-gpt-oss": {
+      "command": "python",
+      "args": ["C:/Users/dzume/Рабочий стол/mctGptoss/main.py"],
+      "env": {
+        "PYTHONPATH": "C:/Users/dzume/Рабочий стол/mctGptoss",
+        "OLLAMA_HOST": "localhost:11434",
+        "MCP_LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}

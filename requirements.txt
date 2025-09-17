@@ -1,0 +1,85 @@
+# Основные зависимости для Autonomous GPT OSS 20B MCP Server
+
+# MCP (Model Context Protocol) - основная библиотека
+mcp>=1.0.0
+
+# Системные утилиты
+psutil>=5.9.0
+requests>=2.28.0
+
+# Базы данных
+# sqlite3 встроена в Python
+
+# Веб запросы и API
+urllib3>=1.26.0
+httpx>=0.24.0  # Для async HTTP запросов
+
+# GUI и интерфейс
+# tkinter встроена в Python 3.x
+pillow>=9.0.0  # Для работы с изображениями в GUI
+matplotlib>=3.5.0  # Для графиков и визуализации
+
+# Логирование и мониторинг
+colorama>=0.4.6  # Цветной вывод в консоль
+rich>=12.0.0  # Красивый вывод в терминал
+
+# Работа с данными и JSON
+# json встроена в Python
+pydantic>=1.10.0  # Валидация данных
+jsonschema>=4.0.0  # Схемы JSON
+
+# Математика и анализ
+numpy>=1.21.0
+pandas>=1.5.0  # Для анализа обучающих данных
+
+# Безопасность и хеширование
+cryptography>=3.4.8
+hashlib  # Встроена в Python
+
+# Время и дата
+# datetime встроена в Python
+python-dateutil>=2.8.2
+
+# Многопоточность и асинхронность
+# threading встроен в Python
+# asyncio встроен в Python 3.7+
+aiohttp>=3.8.0  # Async HTTP клиент
+
+# Файловые операции
+# os, sys встроены в Python
+pathlib  # Встроена в Python 3.4+
+watchdog>=2.1.9  # Мониторинг файлов
+
+# Опциональные зависимости для расширенных функций
+# Раскомментируйте при необходимости:
+
+# GPU поддержка (если используется)
+ torch>=1.12.0
+ transformers>=4.20.0
+
+# Дополнительные форматы данных
+ pyyaml>=6.0  # YAML конфигурации
+ toml>=0.10.2  # TOML конфигурации
+
+# Веб интерфейс (если планируется)
+ flask>=2.2.0
+ fastapi>=0.95.0
+
+# Расширенные возможности ИИ
+ langchain>=0.1.0  # Цепочки для LLM
+ openai>=1.0.0  # OpenAI API (для сравнения)
+
+# Разработка и тестирование
+ pytest>=7.0.0
+ black>=22.0.0  # Форматирование кода
+ flake8>=5.0.0  # Линтер
+
+# Установка:
+# pip install -r requirements.txt
+
+# Минимальная установка (только критические зависимости):
+# pip install mcp psutil requests colorama
+
+# Полная установка с опциональными пакетами:
+# pip install -r requirements.txt
+# pip install torch transformers pyyaml flask pytest black

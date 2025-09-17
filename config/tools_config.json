@@ -1,0 +1,40 @@
+{
+  "tools": {
+    "system_commands": {
+      "enabled": true,
+      "timeout": 30,
+      "max_output_length": 10000
+    },
+    "process_management": {
+      "enabled": true,
+      "allow_system_processes": false,
+      "max_processes_per_operation": 10
+    },
+    "file_operations": {
+      "enabled": true,
+      "allowed_paths": [
+        "C:\\Users\\",
+        "C:\\Temp\\",
+        "/home/",
+        "/tmp/"
+      ],
+      "forbidden_paths": [
+        "C:\\Windows\\System32\\",
+        "/etc/",
+        "/root/"
+      ]
+    },
+    "autonomous_tasks": {
+      "enabled": true,
+      "max_concurrent_tasks": 5,
+      "max_task_duration": 3600,
+      "auto_cleanup_completed": true
+    }
+  },
+  "capabilities": {
+    "self_optimization": true,
+    "system_monitoring": true,
+    "adaptive_learning": true,
+    "goal_planning": true
+  }
+}

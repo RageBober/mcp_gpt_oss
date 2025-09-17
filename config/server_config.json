@@ -1,0 +1,27 @@
+{
+  "server": {
+    "name": "autonomous-gpt-oss-20b",
+    "version": "1.0.0",
+    "host": "localhost",
+    "port": 8080,
+    "max_connections": 10
+  },
+  "gpt_oss": {
+    "model_name": "openai/gpt-oss-20b",
+    "base_url": "http://localhost:11434",
+    "max_tokens": 4000,
+    "temperature": 0.7,
+    "reasoning_level": "medium"
+  },
+  "monitoring": {
+    "update_interval": 5,
+    "log_level": "INFO",
+    "max_log_files": 10,
+    "emotion_update_rate": 10
+  },
+  "database": {
+    "path": "data/autonomous_tasks.db",
+    "backup_interval": 3600,
+    "max_task_history": 1000
+  }
+}
