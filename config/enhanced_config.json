@@ -1,0 +1,28 @@
+{
+  "server": {
+    "name": "enhanced-mcp-server",
+    "version": "2.0.0",
+    "auto_start": true,
+    "enable_gui": true,
+    "enable_monitoring": true
+  },
+  "features": {
+    "web_access": false,
+    "self_modification": false,
+    "advanced_tasks": true,
+    "performance_monitoring": true,
+    "security_audit": true,
+    "backup_system": true
+  },
+  "security": {
+    "restricted_mode": true,
+    "require_confirmations": true,
+    "log_all_actions": true,
+    "enable_alerts": true
+  },
+  "gui": {
+    "theme": "dark",
+    "auto_refresh": true,
+    "refresh_interval": 5
+  }
+}

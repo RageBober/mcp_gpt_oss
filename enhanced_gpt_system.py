@@ -1094,7 +1094,7 @@ def main():
     print(f"   Learning Buffer: {status['learning_buffer_size']} interactions")
 
     if not WEB_ACCESS_AVAILABLE:
-        print("\n⚠️ Enhanced modules not fully available. Please ensure:")
+        print("\n Enhanced modules not fully available. Please ensure:")
         print("   1. web_access_module.py is present")
         print("   2. content_policy_module.py is present")
         print("   3. All dependencies are installed")
